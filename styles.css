@@ -17,3 +17,66 @@
 .hovered {
     background-color: #999; /* Gray color, change to your preference */
 }
+
+/* General page styling */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 40px;
+}
+
+/* Container styling to create grid appearance */
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+/* Style for individual squares in the grid */
+.square {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #f0f0f0;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+/* Style for hovered square */
+.square:hover {
+    background-color: #ccc;
+}
+
+/* Button styling */
+button {
+    background-color: #007AFF;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056D6;
+}
+
+/* Button active (click) effect */
+button:active {
+    background-color: #0040ad;
+}
+
+/* Button to reset the grid */
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
