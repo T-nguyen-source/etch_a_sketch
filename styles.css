@@ -1,14 +1,19 @@
-#grid-container {
-    display: grid;
-    grid-template-columns: repeat(16,1px);
-    grid-gap: 1px;
+/* Container styling with flexbox to create grid appearance */
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px; /* Adjust this to your preferred grid size */
 }
 
-.grid-cell {
-    background-color: white;
-    border: 1px solid #ccc;
+/* Style for individual squares in the grid */
+.square {
+    width: 60px; /* For a 16x16 grid */
+    height: 60px;
+    border: 1px solid black;
+    box-sizing: border-box; /* This makes sure border doesn't add to width/height */
 }
 
-#controls {
-    margin-bottom: 20px;
+/* Style for hovered square */
+.hovered {
+    background-color: #999; /* Gray color, change to your preference */
 }
