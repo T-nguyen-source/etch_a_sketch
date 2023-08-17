@@ -1,0 +1,14 @@
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(16,1px);
+    grid-gap: 1px;
+}
+
+.grid-cell {
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+#controls {
+    margin-bottom: 20px;
+}
